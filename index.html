@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myjscode.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form is validated according to the given requirements using JQuery</h1>
+    <h3>1. Name should be atleast 5 characters long. &nbsp; &nbsp;
+      2. Passwords must match
+      <br>
+      3. Password must be atleast 8 characters long. &nbsp; &nbsp;
+      4. Stop form submission on validation fail.
+      <br>
+      5. Highlight input field with red border which have error. &nbsp; &nbsp;
+      6. Display proper error messages</h3>
+    <form action="" id="myForm">
+      <div id="nameDiv">
+        Name: <input type="text" id="name" class="" />
+        <span id="namespan" style="display: none">Name is incorrect</span>
+      </div>
+      <div>Email <input type="text" id="email" class="" /></div>
+      <div>
+        Password: <input type="password" id="password" class="" /><span
+          id="passspan"
+          style="display: none"
+          >Password length is short</span
+        >
+      </div>
+      <div>
+        Confirm password:
+        <input type="password" id="confirm_password" class="" />
+        <span id="cpassspan" style="display: none">Password don't match</span>
+      </div>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
